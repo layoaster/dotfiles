@@ -1,0 +1,7 @@
+#compdef druid-cli
+
+_druid_cli_completion() {
+  eval $(env _TYPER_COMPLETE_ARGS="${words[1,$CURRENT]}" _DRUID_CLI_COMPLETE=complete_zsh druid-cli)
+}
+
+compdef _druid_cli_completion druid-cli
