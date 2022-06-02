@@ -1,0 +1,7 @@
+[git]
+    autoCommit = true
+    autoPush = false
+
+[edit]
+  command = "subl"
+  args = ["--wait"]
