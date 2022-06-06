@@ -1,0 +1,16 @@
+[user]
+	name = Lionel Mena
+	email = lionelmena@gmail.com
+[core]
+	editor = vim
+[rebase]
+	abbreviateCommands = true
+[pull]
+	ff = only
+[mergetool "smerge"]
+	cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	trustExitCode = true
+[merge]
+	tool = smerge
+[init]
+	defaultBranch = main
