@@ -1,16 +1,26 @@
 [user]
-	name = Lionel Mena
-	email = lionelmena@gmail.com
+    name = Lionel Mena
+    email = lionelmena@gmail.com
+
 [core]
-	editor = vim
+    editor = vim
 [rebase]
-	abbreviateCommands = true
+    abbreviateCommands = true
 [pull]
-	ff = only
+    ff = only
 [mergetool "smerge"]
-	cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-	trustExitCode = true
+    cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+    trustExitCode = true
 [merge]
-	tool = smerge
+    tool = smerge
 [init]
-	defaultBranch = main
+    defaultBranch = main
+
+[includeIf "gitdir:~/projects/code/**"]
+    path = .gitconfig-work
+
+[includeIf "gitdir:~/projects/infra/**"]
+    path = .gitconfig-work
+
+[includeIf "gitdir:~/projects/docs/**"]
+    path = .gitconfig-work
