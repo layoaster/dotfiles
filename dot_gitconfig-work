@@ -1,0 +1,7 @@
+[user]
+	name = Lionel Mena
+	email = lionel.mena@system73.com
+	signingkey = 6B87C0E55971C657
+
+[commit]
+	gpgsign = true
