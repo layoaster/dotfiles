@@ -132,10 +132,5 @@
   "console_title_template": "{{ .Folder }}",
   "osc99": true,
   "final_space": false,
-  "transient_prompt": {
-    "background": "transparent",
-    "foreground": "#d6deeb",
-    "template": "\ue285 "
-  },
   "version": 2
 }
