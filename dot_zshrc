@@ -93,7 +93,6 @@ DEFAULT_USER=`whoami`
 plugins=(
     git
     fzf
-    docker
     aws
   # pass
 )
@@ -187,6 +186,8 @@ alias ls="ls --group-directories-first --color\=tty"
 alias l="ll"
 alias ll="ls -lh --group-directories-first --color\=tty"
 alias la="ls -lAh --group-directories-first --color\=tty"
+
+alias gd="gdw"
 
 
 

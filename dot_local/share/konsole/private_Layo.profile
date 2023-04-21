@@ -2,7 +2,8 @@
 AntiAliasFonts=true
 BoldIntense=true
 ColorScheme=nord
-Font=Hack Nerd Font Mono,12,-1,5,50,0,0,0,0,0
+Font=Hack Nerd Font Mono,14,-1,5,50,0,0,0,0,0
+TabColor=255,255,255,0
 UseFontLineChararacters=false
 
 [Cursor Options]
@@ -15,7 +16,7 @@ Command=/bin/zsh
 DimWhenInactive=false
 Name=Layo
 Parent=FALLBACK/
-TerminalCenter=false
+TerminalCenter=true
 TerminalMargin=0
 
 [Interaction Options]
@@ -24,7 +25,8 @@ TextEditorCmd=6
 TextEditorCmdCustom=subl PATH
 
 [Scrolling]
-HistorySize=10000
+HistoryMode=1
+HistorySize=100000
 ScrollFullPage=true
 
 [Terminal Features]
