@@ -16,8 +16,8 @@
           "properties": {
             "style": "agnoster_short",
             "max_depth": 4,
-            "home_icon": "\uf7db",
-            "folder_icon": "\uf6d7",
+            "home_icon": "\udb80\udedc",
+            "folder_icon": "\udb80\uddd8",
             "folder_separator_icon": " <#011627>\ue0b1</> ",
             "mapped_locations": {
               "~/projects/code": "\ue796"
@@ -36,7 +36,7 @@
             "{{ if gt .Ahead 0 }}#21c7a8{{ end }}",
             "{{ if gt .Behind 0 }}#c792ea{{ end }}"
           ],
-          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uF044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uF046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \udb80\udd93 {{ .StashCount }}{{ end }} ",
           "properties": {
             "branch_icon": "\ue0a0 ",
             "fetch_stash_count": true,
@@ -56,7 +56,7 @@
           "style": "diamond",
           "background": "#FDD835",
           "foreground": "#011627",
-          "leading_diamond": "\ue0b2<transparent,background>\ufa1e</>",
+          "leading_diamond": "\ue0b2<transparent,background>\udb81\udd1f</>",
           "trailing_diamond": "<transparent,background>\ue0b2</>",
           "template": " {{ .FormattedMs }} ",
           "properties": {
@@ -72,7 +72,7 @@
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "<transparent,background>\ue0b2</>",
-          "template": " \ufd31 {{if .Namespace}}{{.Namespace}}{{end}} <#011627>\ue0b3</> {{.Context}} ",
+          "template": " \udb82\udc33 {{if .Namespace}}{{.Namespace}}{{end}} <#011627>\ue0b3</> {{.Context}} ",
           "properties": {
             "parse_kubeconfig": true
           }
@@ -84,7 +84,7 @@
           "foreground": "#d6deeb",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "\ue0b4",
-          "template": " \uf64f {{ .CurrentDate | date .Format }} ",
+          "template": " \udb82\udd54 {{ .CurrentDate | date .Format }} ",
           "properties": {
             "time_format": "15:04:05"
           }
