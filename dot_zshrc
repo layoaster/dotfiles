@@ -167,14 +167,14 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias doco="docker-compose"
-alias docob="docker-compose build"
-alias docou="docker-compose up -d"
-alias docol="docker-compose logs -f"
-alias docos="docker-compose stop"
-alias docoe="docker-compose exec"
-alias docor="docker-compose run --rm"
-alias docod="docker-compose down"
+alias doco="docker compose"
+alias docob="docker compose build"
+alias docou="docker compose up -d"
+alias docol="docker compose logs -f"
+alias docos="docker compose stop"
+alias docoe="docker compose exec"
+alias docor="docker compose run --rm"
+alias docod="docker compose down"
 
 alias kb="kubectl"
 alias kbc="kubectx"
@@ -192,6 +192,9 @@ alias gd="gdw"
 
 
 ######## APPLICATIONS ENV ###########
+
+## docker completions
+source $ZSH/completions/_docker
 
 ## pyenv
 export PYENV_ROOT="$HOME/.pyenv"
