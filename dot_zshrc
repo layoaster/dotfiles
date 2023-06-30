@@ -69,6 +69,28 @@ COMPLETION_WAITING_DOTS="true"
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
+# Set ZSH options
+## Include more information about when the command was executed, etc
+setopt EXTENDED_HISTORY
+
+## Allow multiple terminal sessions to all append to one zsh command history
+setopt APPEND_HISTORY
+
+## When searching history don't display results already cycled through twice
+setopt HIST_FIND_NO_DUPS
+
+## When duplicates are entered, get rid of the duplicates first when we hit $HISTSIZE
+setopt HIST_EXPIRE_DUPS_FIRST
+
+## Don't enter commands into history if they start with a space
+setopt HIST_IGNORE_SPACE
+
+## makes history substitution commands a bit nicer. I don't fully understand
+setopt HIST_VERIFY
+
+## Do not write events to history that are duplicates of the immediately previous event
+setopt HIST_IGNORE_DUPS
+
 # Disables ZSH shared history among terminals
 unsetopt share_history
 
@@ -99,7 +121,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -u
 
 #### Themes
 
@@ -111,7 +133,8 @@ autoload -Uz compinit && compinit
 # eval "$(starship init zsh)"
 
 ## Oh My Posh
-eval "$(oh-my-posh prompt init zsh --config '~/.poshthemes/layo-night-owl.omp.json')"
+# eval "$(oh-my-posh prompt init zsh --config '~/.poshthemes/layo-night-owl.omp.json')"
+eval "$(oh-my-posh prompt init zsh --config '~/.poshthemes/layo-light.json')"
 
 
 ###  User defined functions
@@ -193,7 +216,7 @@ alias gd="gdw"
 
 ######## APPLICATIONS ENV ###########
 
-## docker completions
+## docker completions dirty fix
 source $ZSH/completions/_docker
 
 ## pyenv
