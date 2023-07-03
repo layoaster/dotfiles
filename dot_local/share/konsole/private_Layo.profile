@@ -2,7 +2,7 @@
 AntiAliasFonts=true
 BoldIntense=true
 ColorScheme=nord
-Font=Hack Nerd Font Mono,15,-1,5,50,0,0,0,0,0
+Font=Hack Nerd Font Mono,14,-1,5,50,0,0,0,0,0
 TabColor=255,255,255,0
 UseFontLineChararacters=false
 
