@@ -103,7 +103,7 @@
           "template": "<b></b>"
         },
         {
-          "type": "exit",
+          "type": "status",
           "style": "plain",
           "foreground": "#95ffa4",
           "foreground_templates": [
