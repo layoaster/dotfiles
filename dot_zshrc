@@ -216,9 +216,6 @@ alias gd="gdw"
 
 ######## APPLICATIONS ENV ###########
 
-## docker completions dirty fix
-source $ZSH/completions/_docker
-
 ## pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"

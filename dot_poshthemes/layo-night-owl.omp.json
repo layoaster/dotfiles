@@ -115,7 +115,7 @@
           }
         },
         {
-          "type": "exit",
+          "type": "status",
           "style": "plain",
           "foreground": "#22da6e",
           "foreground_templates": [

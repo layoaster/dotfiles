@@ -1,7 +1,7 @@
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=true
-ColorScheme=nord
+ColorScheme=Dracula
 Font=Hack Nerd Font Mono,14,-1,5,50,0,0,0,0,0
 TabColor=255,255,255,0
 UseFontLineChararacters=false
