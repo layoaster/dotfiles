@@ -93,6 +93,7 @@
           "foreground": "#B39DDB",
           "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }} {{ if ne .Venv .Full }}({{ .Venv }}){{ end }}{{ end }} ",
           "properties": {
+            "home_enabled": true,
             "display_mode": "environment"
           }
         },
