@@ -111,6 +111,7 @@
           "trailing_diamond": "\ue0b0",
           "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }} {{ if ne .Venv .Full }}({{ .Venv }}){{ end }}{{ end }}",
           "properties": {
+            "home_enabled": true,
             "display_mode": "environment"
           }
         },
