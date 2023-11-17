@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=xbindkeys
+Icon=dialog-scripts
+Name=xbindkeys.sh
+Type=Application
+X-KDE-AutostartScript=true
